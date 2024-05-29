@@ -1,0 +1,21 @@
+{
+	"manifest_version": 3,
+	"name": "Localhost Clear Local Storage & Hard Reload",
+	"version": "1.0",
+	"description": "Clear LocalStorage data for localhost domains and hard reload",
+	"permissions": [
+		"tabs",
+		"storage",
+		"activeTab"
+	],
+	"icons": {
+		"48": "icons/icon.png"
+	},
+	"content_scripts": [
+		{
+			"matches": ["*://localhost/*"],
+			"js": ["script.js"],
+			"css": ["style.css"]
+		}
+	]
+}
