@@ -1,0 +1,1 @@
+# firefox-addons-clear-localstorage-and-hard-reload-or-hard-reload
